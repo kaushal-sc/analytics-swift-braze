@@ -35,7 +35,11 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "SegmentBraze",
-            dependencies: ["Segment", .product(name: "BrazeKit", package: "braze-swift-sdk")]),
+            dependencies: ["Segment", 
+                           .product(name: "BrazeKit", package: "braze-swift-sdk"),
+                           .product(name: "BrazeUI", package: "braze-swift-sdk")
+                          ]
+        ),
         
         // TESTS ARE HANDLED VIA THE EXAMPLE APP.
     ]
