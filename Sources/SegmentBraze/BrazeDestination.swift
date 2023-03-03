@@ -44,7 +44,7 @@ public class BrazeDestination: DestinationPlugin {
     public let type = PluginType.destination
     public let key = "Appboy"
     public var analytics: Analytics? = nil
-    var braze: Braze? = nil
+    public var braze: Braze? = nil
     
     private var brazeSettings: BrazeSettings?
         
